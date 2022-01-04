@@ -24,8 +24,6 @@ public class Controller
     @FXML private Button openBracket;
     @FXML private Button closeBracket;
 
-    //private Calculator calculator = new Calculator();
-
     public void clear(ActionEvent event)
     {
         expression = "";
