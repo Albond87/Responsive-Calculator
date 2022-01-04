@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Pane fx:id="numbers" layoutX="36.0" layoutY="174.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#number" prefHeight="56.0" prefWidth="74.06" text="7" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" layoutX="84.0" mnemonicParsing="false" onAction="#number" prefHeight="56.0" prefWidth="74.06" text="8" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" layoutX="169.0" mnemonicParsing="false" onAction="#number" prefHeight="56.0" prefWidth="74.06" text="9" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" layoutY="64.0" mnemonicParsing="false" onAction="#number" prefHeight="56.0" prefWidth="74.06" text="4" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" layoutX="84.0" layoutY="64.0" mnemonicParsing="false" onAction="#number" prefHeight="56.0" prefWidth="74.06" text="5" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" layoutX="169.0" layoutY="64.0" mnemonicParsing="false" onAction="#number" prefHeight="56.0" prefWidth="74.06" text="6" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" layoutY="128.0" mnemonicParsing="false" onAction="#number" prefHeight="56.0" prefWidth="74.06" text="1" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" layoutX="84.0" layoutY="128.0" mnemonicParsing="false" onAction="#number" prefHeight="56.0" prefWidth="74.06" text="2" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" layoutX="169.0" layoutY="128.0" mnemonicParsing="false" onAction="#number" prefHeight="56.0" prefWidth="74.06" text="3" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" layoutX="84.0" layoutY="192.0" mnemonicParsing="false" onAction="#number" prefHeight="56.0" prefWidth="74.06" text="0" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Button fx:id="decimalPoint" alignment="CENTER" layoutX="205.0" layoutY="366.0" mnemonicParsing="false" onAction="#decimalPoint" prefHeight="56.0" prefWidth="74.06" text="." textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="clear" alignment="CENTER" layoutX="205.0" layoutY="110.0" mnemonicParsing="false" onAction="#clear" prefHeight="56.0" prefWidth="74.06" text="C" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="delete" alignment="CENTER" disable="false" layoutX="289.0" layoutY="110.0" mnemonicParsing="false" onAction="#delete" prefHeight="56.0" prefWidth="74.06" text="&lt;-" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="negative" alignment="CENTER" layoutX="36.0" layoutY="366.0" mnemonicParsing="false" onAction="#negative" prefHeight="56.0" prefWidth="74.06" text="(-)" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="openBracket" alignment="CENTER" layoutX="36.0" layoutY="110.0" mnemonicParsing="false" onAction="#openBracket" prefHeight="56.0" prefWidth="74.06" text="(" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="closeBracket" alignment="CENTER" disable="true" layoutX="120.0" layoutY="110.0" mnemonicParsing="false" onAction="#closeBracket" prefHeight="56.0" prefWidth="74.06" text=")" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Pane fx:id="operators" disable="false" layoutX="289.0" layoutY="174.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#operator" prefHeight="56.0" prefWidth="74.06" text="/" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <effect>
+                  <ColorAdjust hue="-1.0" saturation="0.17" />
+               </effect>
+            </Button>
+            <Button alignment="CENTER" layoutY="64.0" mnemonicParsing="false" onAction="#operator" prefHeight="56.0" prefWidth="74.06" text="*" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <effect>
+                  <ColorAdjust hue="-1.0" saturation="0.17" />
+               </effect>
+            </Button>
+            <Button alignment="CENTER" layoutY="128.0" mnemonicParsing="false" onAction="#operator" prefHeight="56.0" prefWidth="74.06" text="-" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <effect>
+                  <ColorAdjust hue="-1.0" saturation="0.17" />
+               </effect>
+            </Button>
+            <Button alignment="CENTER" layoutY="192.0" mnemonicParsing="false" onAction="#operator" prefHeight="56.0" prefWidth="74.06" text="+" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <effect>
+                  <ColorAdjust hue="-1.0" saturation="0.17" />
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+      <Button fx:id="equals" alignment="CENTER" disable="false" layoutX="36.0" layoutY="430.0" mnemonicParsing="false" onAction="#calculate" prefHeight="56.0" prefWidth="328.0" text="=" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <effect>
+            <ColorAdjust hue="-1.0" saturation="0.58" />
+         </effect>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d1e7f2" height="70.0" layoutX="36.0" layoutY="23.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="328.0" />
+      <Label fx:id="display" alignment="TOP_LEFT" layoutX="41.0" layoutY="23.0" prefHeight="70.0" prefWidth="316.0" text="0" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="Consolas" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
